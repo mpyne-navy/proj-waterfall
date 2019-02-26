@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}{{ title }} (Project Waterfall){% endblock %}</title>
+        <link rel="stylesheet" href="static/css/bulma.css">
+        <link rel="stylesheet" href="static/css/fontawesome.css">
+        <link rel="stylesheet" href="static/css/solid.css">
+    </head>
+    <body class="has-navbar-fixed-top">
+        <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="dropdown navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item"><span class="icon"><i class="fas fa-home"></i></span></a>
+                <div class="navbar-item">Our Navy Portal</div>
+
+                <!-- must be structured this way to appear on mobile -->
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <!-- By default doesn't show on mobile, must be stuffed under navbar-burger instead -->
+            <div class="navbar-menu">
+                <div class="navbar-start"></div>
+                <div class="navbar-end">
+                    <a class="navbar-item">
+                        <span class="icon has-text-dark"><i class="fas fa-envelope"></i></span>
+                        <span class="tag is-dark is-rounded">New notification!</span>
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Useful Tools</a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">See my Career History</a>
+                            <a class="navbar-item">See my “I love me” wall</a>
+                            <a class="navbar-item">References</a>
+                            <a class="navbar-item">Pay Tables</a>
+                            <a class="navbar-item">Quick Links</a>
+                        </div>
+                    </div>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Career &amp; Life Events</a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">New to the Navy</a>
+                            <a class="navbar-item">Performance &amp; Awards</a>
+                            <a class="navbar-item">Assignment, Leave &amp; Travel</a>
+                            <a class="navbar-item">Training &amp; Education</a>
+                            <a class="navbar-item">Advancement &amp; Promotion</a>
+                            <a class="navbar-item">Family Support</a>
+                        </div>
+                    </div>
+
+                    {% block user_state %}
+                    {% endblock %}
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">Docs</a>
+                        <div class="navbar-dropdown is-right">
+                            <a class="navbar-item">Overview</a>
+                            <a class="navbar-item">Performance</a>
+                            <hr class="navbar-divider">
+                            <div class="navbar-item">Project Waterfall v0.0.1</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-medium is-dark is-bold">
+            <div class="hero-body">
+                <h1 class="title">Project Waterfall</h1>
+                <p class="subtitle">Simulating a faster MyNavy Portal</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-3">
+                        <aside class="menu">
+                            <p class="menu-label">Navigate to...</p>
+                            <ul class="menu-list">
+                                <li><a href="#">Quick Links</a></li>
+                            </ul>
+                            <p class="menu-label">Career and Life Events</p>
+                            <ul class="menu-list">
+                                <li class="nav-item"><a href="#">Performance</a></li>
+                                <li class="nav-item"><a href="#">Assignment, Leave, Travel</a></li>
+                                <li class="nav-item"><a href="#">Training &amp; Education</a></li>
+                            </ul>
+                        </aside>
+                    </div>
+                    <div class="column" id="content">
+                        {% block content %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>Project Waterfall, © 2019 Michael Pyne.</p>
+                <p>Uses <a href="https://bulma.io/">Bulma</a> and <a
+                    href="https://fontawesome.com/">Font Awesome</a>.</p>
+            </div>
+        </footer>
+    </body>
+</html>

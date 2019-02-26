@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Our Navy Portal{% endblock %}
+{% block content %}
+<div class="card">
+    <div class="card-content">
+        <p class="title">You have nothing to do</p>
+        <p class="subtitle">But you can see your baseball card I guess?</p>
+    </div>
+    <footer class="card-footer">
+        <span class="card-footer-item">See your profile</span>
+    </footer>
+</div>
+{% endblock %}
+
+{% block user_state %}
+<div class="navbar-item has-dropdown is-hoverable">
+    <a class="navbar-item"><span class="icon"><i class="fas fa-user-circle"></i></span></a>
+    <div class="navbar-dropdown">
+        <a class="navbar-item" href="/logged_in">Login</a>
+    </div>
+</div>
+{% endblock %}
