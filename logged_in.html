@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Our Navy Portal (Project Waterfall)</title>
-        <link rel="stylesheet" href="static/css/bulma.css">
-        <link rel="stylesheet" href="static/css/fontawesome.css">
-        <link rel="stylesheet" href="static/css/solid.css">
+        <link rel="stylesheet" href="/static/css/bulma.css">
+        <link rel="stylesheet" href="/static/css/fontawesome.css">
+        <link rel="stylesheet" href="/static/css/solid.css">
     </head>
     <body class="has-navbar-fixed-top">
         <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="dropdown navigation">
@@ -38,19 +38,20 @@
                             <a class="navbar-item">See my “I love me” wall</a>
                             <a class="navbar-item">References</a>
                             <a class="navbar-item">Pay Tables</a>
-                            <a class="navbar-item">Quick Links</a>
+                            <a class="navbar-item" href="/resources/links">Quick Links</a>
                         </div>
                     </div>
 
                     <div class="navbar-item has-dropdown is-hoverable">
                         <a class="navbar-link">Career &amp; Life Events</a>
                         <div class="navbar-dropdown">
-                            <a class="navbar-item">New to the Navy</a>
-                            <a class="navbar-item">Performance &amp; Awards</a>
-                            <a class="navbar-item">Assignment, Leave &amp; Travel</a>
-                            <a class="navbar-item">Training &amp; Education</a>
-                            <a class="navbar-item">Advancement &amp; Promotion</a>
-                            <a class="navbar-item">Family Support</a>
+                            <a class="navbar-item" href="/cle/n2n/">New to the Navy</a>
+                            <a class="navbar-item" href="/cle/career/">Career Management</a>
+                            <a class="navbar-item" href="/cle/perf/">Performance &amp; Awards</a>
+                            <a class="navbar-item" href="/cle/alt/">Assignment, Leave &amp; Travel</a>
+                            <a class="navbar-item" href="/cle/learn/">Training &amp; Education</a>
+                            <a class="navbar-item" href="/cle/ap/">Advancement &amp; Promotion</a>
+                            <a class="navbar-item" href="/cle/sfs/">Sailor &amp; Family Support</a>
                         </div>
                     </div>
 
@@ -67,7 +68,7 @@
                             <a class="navbar-item">Overview</a>
                             <a class="navbar-item">Performance</a>
                             <hr class="navbar-divider">
-                            <div class="navbar-item">Project Waterfall v0.0.1</div>
+                            <div class="navbar-item">Project Waterfall v0.0.2</div>
                         </div>
                     </div>
                 </div>
@@ -88,21 +89,31 @@
                         <aside class="menu">
                             <p class="menu-label">Navigate to...</p>
                             <ul class="menu-list">
-                                <li><a href="#">Quick Links</a></li>
+                                <li><a href="/resources/links">Quick Links</a></li>
                             </ul>
-                            <p class="menu-label">Career and Life Events</p>
+                            <p class="menu-label">Notable Resources</p>
                             <ul class="menu-list">
-                                <li class="nav-item"><a href="#">Performance</a></li>
-                                <li class="nav-item"><a href="#">Assignment, Leave, Travel</a></li>
-                                <li class="nav-item"><a href="#">Training &amp; Education</a></li>
+                                <li class="nav-item"><a href="/cle/perf/">Check PARFQ for Spring PFA</a></li>
+                                <li class="nav-item"><a href="/cle/alt/">Check Leave Balance</a></li>
+                                <li class="nav-item"><a href="/cle/learn/">Check Tuition Assistance</a></li>
+                                <li class="nav-item"><a href="/cle/career/">Check Current Reenlistment Bonuses</a></li>
                             </ul>
                         </aside>
                     </div>
-                    <div class="column" id="content">
+                    <div class="column content" id="content">
                         <div class="card">
                             <div class="card-content">
-                                <p class="title">Michael, you have nothing to do</p>
-                                <p class="subtitle">But you can see your baseball card I guess?</p>
+                                <p class="title">What's Happening This Month</p>
+                                <p class="subtitle">May 2019</p>
+                                <ul>
+                                    <li>Active Component O-5 Results for FY-20 expected. See <a href="/cle/ap/summary">Advancements &amp; Promotion Summary</a> to make sure you're ready.</li>
+                                    <li>Celebrate Military Spouse Appreciation Day this 10<sup>th</sup> of May with an app! Visit the <a href="https://applocker.navy.mil/">Navy AppLocker</a>!</li>
+                                </ul>
+
+                                <div class="notification is-warning"><span class="icon"><i class="fas fa-exclamation"></i></span> Your
+                                    PARFQ expired 2 months ago and must be
+                                    updated for your command's upcoming PFA cycle!
+                                </div>
                             </div>
                             <footer class="card-footer">
                                 <span class="card-footer-item">See your profile</span>
