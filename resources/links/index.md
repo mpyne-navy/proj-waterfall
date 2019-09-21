@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Important Links
-is_logged_in: false
+is\_logged\_in: false
 ---
 <h2 class="title">Important Links</h2>
 <p>The links below may help you find things that Our Navy Portal does not provide.</p>
