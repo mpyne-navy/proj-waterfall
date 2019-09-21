@@ -1,191 +1,71 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Our Navy Portal (Project Waterfall)</title>
-        <link rel="stylesheet" href="../../assets/css/bulma.css">
-        <link rel="stylesheet" href="../../assets/css/fa/fontawesome.css">
-        <link rel="stylesheet" href="../../assets/css/fa/solid.css">
-    </head>
-    <body class="has-navbar-fixed-top">
-        <nav class="navbar is-fixed-top is-info" role="navigation" aria-label="dropdown navigation">
-            <div class="navbar-brand">
-                <a class="navbar-item"><span class="icon"><i class="fas fa-home"></i></span></a>
-                <div class="navbar-item">Our Navy Portal</div>
+---
+layout: default
+title: Important Links
+is_logged_in: false
+---
+<h2 class="title">Important Links</h2>
+<p>The links below may help you find things that Our Navy Portal does not provide.</p>
+<article class="message is-info is-small">
+  <div class="message-body">Links to CAC-protected websites are indicated with
+    this icon: <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span>
+  </div>
+</article>
 
-                <!-- must be structured this way to appear on mobile -->
-                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
+<h3 class="title">Personnel and Training Records</h3>
+<ul>
+  <li><a href="https://asm3.nmci.navy.mil/ASM3/">ASM - Advanced Skills Management</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://www.bol.navy.mil/">BOL</a> - BUPERS Online <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://ntmpsweb.ncdc.navy.mil/etjclient/login.aspx">ETJ</a> - Electronic Training Jacket <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://ntmpsweb.ncdc.navy.mil/Fltmps/">FLTMPS</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://jst.doded.mil/smart/signIn.do">JST</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://mypay.dfas.mil/mypay.aspx">myPay</a></li>
+</ul>
 
-            <!-- By default doesn't show on mobile, must be stuffed under navbar-burger instead -->
-            <div class="navbar-menu">
-                <div class="navbar-start"></div>
-                <div class="navbar-end">
-                    <a class="navbar-item">
-                        <span class="icon has-text-dark"><i class="fas fa-envelope"></i></span>
-                        <span class="tag is-dark is-rounded">New notification!</span>
-                    </a>
+<h3 class="title">Career Management</h3>
+<ul>
+  <li><a href="https://www.cmsid.navy.mil/">CMS-ID</a> Career Management System for Interactive Detailing <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://prod.neas.netc.navy.mil/NEASRpts/Individual.aspx">Enlisted Advancement Profile Sheets</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="http://www.navycollege.navy.mil/">Navy College</a></li>
+  <li><a href="https://www.cool.navy.mil/">Navy COOL</a></li>
+  <li><a href="https://usmap.netc.navy.mil/">USMAP</a></li>
+</ul>
 
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Useful Tools</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item">See my Career History</a>
-                            <a class="navbar-item">See my “I love me” wall</a>
-                            <a class="navbar-item">References</a>
-                            <a class="navbar-item">Pay Tables</a>
-                            <a class="navbar-item" href="../../resources/links">Quick Links</a>
-                        </div>
-                    </div>
+<h3 class="title">Policy, Guidance and Reference Material</h3>
+<ul>
+  <li><a href="http://www.public.navy.mil/bupers-npc/support/21st…eadiness/Pages/Personal-Financial-Management.aspx">Blended Retirement System</a> training</li>
+  <li><a href="https://www.secnav.navy.mil/doni/default.aspx">DON Issuances</a> (OPNAV and SECNAV Instructions)</li>
+  <li><a href="https://www.ebenefits.va.gov/ebenefits/homepage">eBenefits</a></li>
+  <li><a href="https://www.navymwrdigitallibrary.org/">Navy Digital Library</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://ombudsmanregistry.cnic.navy.mil/">Ombudsman Registry</a></li>
+  <li><a href="https://mpte.navy.deps.mil/sites/npc/pers2/SitePages/Home.aspx">Pay/Personnel/Travel SOPs</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="http://www.navy.mil/local/cnp/mptestratdesign.asp">Sailor 2025</a></li>
+  <li><a href="http://www.secnav.navy.mil/innovation/Pages/Home.aspx">SECNAV Center for Innovation</a></li>
+</ul>
 
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Career &amp; Life Events</a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="../../cle/n2n/">New to the Navy</a>
-                            <a class="navbar-item" href="../../cle/career/">Career Management</a>
-                            <a class="navbar-item" href="../../cle/perf/">Performance &amp; Awards</a>
-                            <a class="navbar-item" href="../../cle/alt/">Assignment, Leave &amp; Travel</a>
-                            <a class="navbar-item" href="../../cle/learn/">Training &amp; Education</a>
-                            <a class="navbar-item" href="../../cle/ap/">Advancement &amp; Promotion</a>
-                            <a class="navbar-item" href="../../cle/sfs/">Sailor &amp; Family Support</a>
-                        </div>
-                    </div>
+<h3 class="title">DoD and Joint Websites</h3>
+<ul>
+  <li><a href="http://www.defensetravel.dod.mil/index.cfm">Defense Travel System</a></li>
+  <li><a href="https://jkodirect.jten.mil/">JKO</a></li>
+  <li><a href="https://www.dmdc.osd.mil/milconnect/">milConnect</a></li>
+  <li><a href="https://login.milsuite.mil/">milSuite</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+</ul>
 
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-item"><span class="icon"><i class="fas fa-user-circle"></i></span></a>
-                        <div class="navbar-dropdown">
-                            <a class="navbar-item" href="../../logged_in.html">Login</a>
-                        </div>
-                    </div>
-
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link">Docs</a>
-                        <div class="navbar-dropdown is-right">
-                            <a class="navbar-item">Overview</a>
-                            <a class="navbar-item">Performance</a>
-                            <hr class="navbar-divider">
-                            <div class="navbar-item">Project Waterfall v0.0.2</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-
-        <section class="hero is-medium is-dark is-bold">
-            <div class="hero-body">
-                <h1 class="title">Project Waterfall</h1>
-                <p class="subtitle">Simulating a faster MyNavy Portal</p>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="breadcrumb" aria-label="breadcrumbs">
-                    <ul>
-                        <li><a href="../../">Our Navy Portal</a></li>
-                        <li><a href="../">Resources</a></li>
-                        <li class="is-active"><a href="#" aria-current="page">Quick Links</a></li>
-                    </ul>
-                </div>
-
-                <div class="columns">
-                    <div class="column is-3">
-                        <aside class="menu">
-                            <p class="menu-label">Navigate to...</p>
-                            <ul class="menu-list">
-                                <li class="is-active"><a href="../../resources/links">Quick Links</a></li>
-                            </ul>
-                            <p class="menu-label">Notable Resources</p>
-                            <ul class="menu-list">
-                                <li class="nav-item"><a href="../../cle/perf/">Check PARFQ for Spring PFA</a></li>
-                                <li class="nav-item"><a href="../../cle/alt/">Check Leave Balance</a></li>
-                                <li class="nav-item"><a href="../../cle/learn/">Check Tuition Assistance</a></li>
-                                <li class="nav-item"><a href="../../cle/career/">Check Current Reenlistment Bonuses</a></li>
-                            </ul>
-                        </aside>
-                    </div>
-                    <div class="column content" id="content">
-                        <h2 class="title">Important Links</h2>
-                        <p>The links below may help you find things that Our Navy Portal does not provide.</p>
-                        <article class="message is-info is-small">
-                            <div class="message-body">Links to CAC-protected websites are indicated with
-                                this icon: <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span>
-                            </div>
-                        </article>
-
-                        <h3 class="title">Personnel and Training Records</h3>
-                        <ul>
-                            <li><a href="https://asm3.nmci.navy.mil/ASM3/">ASM - Advanced Skills Management</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://www.bol.navy.mil/">BOL</a> - BUPERS Online <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://ntmpsweb.ncdc.navy.mil/etjclient/login.aspx">ETJ</a> - Electronic Training Jacket <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://ntmpsweb.ncdc.navy.mil/Fltmps/">FLTMPS</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://jst.doded.mil/smart/signIn.do">JST</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://mypay.dfas.mil/mypay.aspx">myPay</a></li>
-                        </ul>
-
-                        <h3 class="title">Career Management</h3>
-                        <ul>
-                            <li><a href="https://www.cmsid.navy.mil/">CMS-ID</a> Career Management System for Interactive Detailing <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://prod.neas.netc.navy.mil/NEASRpts/Individual.aspx">Enlisted Advancement Profile Sheets</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="http://www.navycollege.navy.mil/">Navy College</a></li>
-                            <li><a href="https://www.cool.navy.mil/">Navy COOL</a></li>
-                            <li><a href="https://usmap.netc.navy.mil/">USMAP</a></li>
-                        </ul>
-
-                        <h3 class="title">Policy, Guidance and Reference Material</h3>
-                        <ul>
-                            <li><a href="http://www.public.navy.mil/bupers-npc/support/21st…eadiness/Pages/Personal-Financial-Management.aspx">Blended Retirement System</a> training</li>
-                            <li><a href="https://www.secnav.navy.mil/doni/default.aspx">DON Issuances</a> (OPNAV and SECNAV Instructions)</li>
-                            <li><a href="https://www.ebenefits.va.gov/ebenefits/homepage">eBenefits</a></li>
-                            <li><a href="https://www.navymwrdigitallibrary.org/">Navy Digital Library</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://ombudsmanregistry.cnic.navy.mil/">Ombudsman Registry</a></li>
-                            <li><a href="https://mpte.navy.deps.mil/sites/npc/pers2/SitePages/Home.aspx">Pay/Personnel/Travel SOPs</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="http://www.navy.mil/local/cnp/mptestratdesign.asp">Sailor 2025</a></li>
-                            <li><a href="http://www.secnav.navy.mil/innovation/Pages/Home.aspx">SECNAV Center for Innovation</a></li>
-                        </ul>
-
-                        <h3 class="title">DoD and Joint Websites</h3>
-                        <ul>
-                            <li><a href="http://www.defensetravel.dod.mil/index.cfm">Defense Travel System</a></li>
-                            <li><a href="https://jkodirect.jten.mil/">JKO</a></li>
-                            <li><a href="https://www.dmdc.osd.mil/milconnect/">milConnect</a></li>
-                            <li><a href="https://login.milsuite.mil/">milSuite</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                        </ul>
-
-                        <h3 class="title">Unsorted</h3>
-                        <ul>
-                            <li><a href="https://data.nmcphc.med.navy.mil/edha/index.aspx">Deployment Health Assessments</a></li>
-                            <li><a href="https://esams.cnic.navy.mil/esams_gen_2/loginesams.aspx">ESAMS</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://www.applocker.navy.mil/#!/apps">Navy App Locker</a></li>
-                            <li><a href="https://learning.nel.navy.mil/">Navy eLearning</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://www.navyreserve.navy.mil/">Navy Reserve Homeport</a></li>
-                            <li><a href="http://www.netc.navy.mil/">NETC</a></li>
-                            <li><a href="https://navyfamily.navy.mil/">NFAAS</a></li>
-                            <li><a href="https://www.homeport.navy.mil/links/owa-navy-links/">NMCI OWA</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="http://www.public.navy.mil/bupers-npc/Pages/default.aspx">NPC</a></li>
-                            <li><a href="http://www.cnrc.navy.mil/">NRC</a></li>
-                            <li><a href="https://nsipsprod-sdni.nmci.navy.mil/">NSIPS</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://data.nmcphc.med.navy.mil/pha/Index.aspx">PHA</a></li>
-                            <li><a href="https://rapids-appointments.dmdc.osd.mil/">RAPIDS Appt. Scheduler</a></li>
-                            <li><a href="https://sailor.navy.mil/">SAILOR</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
-                            <li><a href="https://www.tsp.gov/">TSP</a></li>
-                            <li><a href="https://awards.navy.mil/">U.S. Navy Awards</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer">
-            <div class="content has-text-centered">
-                <p>Project Waterfall, © 2019 Michael Pyne.</p>
-                <p>Uses <a href="https://bulma.io/">Bulma</a> and <a
-                    href="https://fontawesome.com/">Font Awesome</a>.</p>
-            </div>
-        </footer>
-    </body>
-</html>
+<h3 class="title">Unsorted</h3>
+<ul>
+  <li><a href="https://data.nmcphc.med.navy.mil/edha/index.aspx">Deployment Health Assessments</a></li>
+  <li><a href="https://esams.cnic.navy.mil/esams_gen_2/loginesams.aspx">ESAMS</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://www.applocker.navy.mil/#!/apps">Navy App Locker</a></li>
+  <li><a href="https://learning.nel.navy.mil/">Navy eLearning</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://www.navyreserve.navy.mil/">Navy Reserve Homeport</a></li>
+  <li><a href="http://www.netc.navy.mil/">NETC</a></li>
+  <li><a href="https://navyfamily.navy.mil/">NFAAS</a></li>
+  <li><a href="https://www.homeport.navy.mil/links/owa-navy-links/">NMCI OWA</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="http://www.public.navy.mil/bupers-npc/Pages/default.aspx">NPC</a></li>
+  <li><a href="http://www.cnrc.navy.mil/">NRC</a></li>
+  <li><a href="https://nsipsprod-sdni.nmci.navy.mil/">NSIPS</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://data.nmcphc.med.navy.mil/pha/Index.aspx">PHA</a></li>
+  <li><a href="https://rapids-appointments.dmdc.osd.mil/">RAPIDS Appt. Scheduler</a></li>
+  <li><a href="https://sailor.navy.mil/">SAILOR</a> <span class="tag is-info icon is-small"><i class="fas fa-user-lock"></i></span></li>
+  <li><a href="https://www.tsp.gov/">TSP</a></li>
+  <li><a href="https://awards.navy.mil/">U.S. Navy Awards</a></li>
+</ul>
