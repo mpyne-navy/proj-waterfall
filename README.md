@@ -11,6 +11,6 @@ direction the U.S. Web Design Standards goes).
 
 ## Testing
 
-For now, just run an HTTP server in the server root (e.g. `python3 -m http.server`)
-or look at https://mpyne-navy.github.io/proj-waterfall/ which should be reflective
-of the `master` branch of this Github repository.
+You'll want to install Ruby Gems, Bundler, and Jekyll. If you install the first two
+then the normal [directions for setting up a Jekyll theme](https://github.com/jekyll/minima)
+should be sufficient to take you the rest of the way.
