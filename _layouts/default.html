@@ -39,7 +39,8 @@
                 <a class="navbar-item">See my “I love me” wall</a>
                 <a class="navbar-item">References</a>
                 <a class="navbar-item">Pay Tables</a>
-                <a class="navbar-item" href="resources/links">Quick Links</a>
+                <a class="navbar-item" href="{{ 'resources/links' | relative_url }}">Quick Links</a>
+                <a class="navbar-item" href="{{ 'resources/get-record.html' | relative_url }}">MyRecord</a>
               </div>
             </div>
 
@@ -122,6 +123,7 @@
                 <p class="menu-label">Navigate to...</p>
                 <ul class="menu-list">
                   <li><a href="{{ 'resources/links' | relative_url }}">Quick Links</a></li>
+                  <li><a href="{{ 'resources/get-record.html' | relative_url }}">MyRecord</a></li>
                 </ul>
                 <p class="menu-label">Notable Resources</p>
                 <ul class="menu-list">

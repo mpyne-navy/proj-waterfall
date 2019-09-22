@@ -1,0 +1,66 @@
+---
+layout: default
+title: My Record
+---
+<h3>Record view thingy:</h3>
+
+<div id="loading_panel">Loading...</div>
+
+<div id="res_record_content">
+    <table id="tbl_data">
+        <tr>
+            <th>Data Entry</th>
+            <th>Value</th>
+        </tr>
+    </table>
+</div>
+
+<script>
+'use strict';
+
+function update_table_with_record(obj) {
+    const out_div = document.getElementById('loading_panel');
+    out_div.remove();
+
+    const tblElem = document.getElementById('tbl_data');
+
+    // Add an HTML row based on the named value in the result set
+    const add_row = (name) => {
+        const tr = document.createElement('tr');
+        const td_name = document.createElement('td');
+        const td_val  = document.createElement('td');
+
+        td_name.textContent = name
+        td_val.textContent = "" + obj[name]
+
+        tr.appendChild(td_name)
+        tr.appendChild(td_val)
+        tblElem.appendChild(tr)
+    }
+
+    console.log("Updating HTML table");
+    const rec_elems = ['id', 'message', 'curr_rank', 'name', 'curr_serv_start'];
+    rec_elems.forEach(add_row);
+}
+
+{%- if jekyll.environment == "production" -%}
+const nav_record_api_url_base = 'https://cd7mejr246.execute-api.us-east-1.amazonaws.com/Prod';
+{%- else -%}
+const nav_record_api_url_base = 'http://localhost:3000'
+{%- endif -%}
+
+// TODO Hardcoded for now
+const nav_record_api_url = nav_record_api_url_base + '/record/pers/1039877046';
+
+// Need 'cors' set as otherwise the browser won't let JS see the response even
+// if the server is OK with it.
+fetch(nav_record_api_url, { mode: 'cors' })
+.then((obj) => { if(obj.ok) { return obj.json() } else { throw obj } })
+.then((obj) => update_table_with_record(obj))
+.catch((err) => {
+    const out_div = document.getElementById('loading_panel');
+    out_div.innerHTML = "Hit an error loading the record!" + err;
+    console.error(err)
+})
+
+</script>

@@ -7,3 +7,4 @@ title: Useful Resources
 These resources may be helpful in meeting your HR needs
 
 * [Quick Links](links/)
+* [Personnel Record](get-record.html)
