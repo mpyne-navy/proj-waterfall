@@ -16,7 +16,19 @@ time any Sailor may spend on a single sea tour.</p>
 applies to all enlisted Sailors except <a href="#rating_nuc">nuclear-trained
 Sailors</a> and <a href="#rating_non_ssf">Sailors in non-SSF ratings</a>:</p>
 
-<table class="table is-hovered is-bordered is-narrow is-striped">
+<div class="field has-addons">
+  <div class="control">
+    <input id="input_rating_filter" class="input" type="text" placeholder="Type a rating abbreviation">
+  </div>
+  <div class="control">
+    <button id="btn_update_table" class="button is-info">
+      Update table
+    </button>
+  </div>
+</div>
+<!-- Javascript that applies to this is below the table -->
+
+<table id="tbl_rating_ssf" class="table is-hovered is-bordered is-narrow is-striped">
   <thead>
     <tr>
       <th>Rating</th>
@@ -1085,6 +1097,34 @@ Sailors</a> and <a href="#rating_non_ssf">Sailors in non-SSF ratings</a>:</p>
     </tr>
   </tbody>
 </table>
+
+<script>
+const button = document.getElementById('btn_update_table');
+const search_text = document.getElementById('input_rating_filter');
+
+if (!button || !search_text) {
+  throw new Error('button updater or search input not in DOM???');
+}
+
+button.addEventListener('click', (ev) => {
+  const cur_search_text = search_text.value;
+  const cur_search_id = 'rating_' + cur_search_text;
+
+  // The header row is not returned by the [id^=rating] thing so that it's not hidden
+  const table_rows = document.querySelectorAll('table#tbl_rating_ssf tr[id^=rating]');
+
+  table_rows.forEach(row => {
+    if (cur_search_text.length === 0 || row.attributes.id.value.startsWith(cur_search_id)) {
+      // Show the row if no search or the row is a match
+      row.style.removeProperty('display');
+    } else {
+      // Hide the row if the search is not a match
+      row.style.display = 'none';
+    }
+  })
+})
+
+</script>
 
 <h2 id="rating_nuc">Nuclear Ratings</h2>
 
