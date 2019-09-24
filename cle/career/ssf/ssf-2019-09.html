@@ -1107,7 +1107,7 @@ if (!button || !search_text) {
 }
 
 button.addEventListener('click', (ev) => {
-  const cur_search_text = search_text.value;
+  const cur_search_text = search_text.value.toUpperCase();
   const cur_search_id = 'rating_' + cur_search_text;
 
   // The header row is not returned by the [id^=rating] thing so that it's not hidden
