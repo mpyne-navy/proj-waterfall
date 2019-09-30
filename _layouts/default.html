@@ -119,6 +119,9 @@
           {%- include breadcrumbs.html path=page.path title=page.title  -%}
 
           <div class="columns">
+            <div class="column content" id="content">
+              {{ content }}
+            </div>
             <div class="column is-3">
               <aside class="menu">
                 <p class="menu-label">Navigate to...</p>
@@ -135,9 +138,6 @@
                   <li class="nav-item"><a href="{{ 'cle/career/' | relative_url }}">Check Current Reenlistment Bonuses</a></li>
                 </ul>
               </aside>
-            </div>
-            <div class="column content" id="content">
-              {{ content }}
             </div>
           </div>
         </div>
