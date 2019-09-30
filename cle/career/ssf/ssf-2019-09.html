@@ -32,14 +32,11 @@ community manager or detailer
 for career information.
 </p>
 
-<div class="field has-addons">
-  <div class="control">
+<div class="field">
+  <label class="label">Filter table to ratings that start with:</label>
+  <div class="control has-icons-left">
     <input id="input_rating_filter" class="input" type="text" placeholder="Type a rating abbreviation">
-  </div>
-  <div class="control">
-    <button id="btn_update_table" class="button is-info">
-      Update table
-    </button>
+    <span class="icon is-small is-left"><i class="fas fa-search"></i></span>
   </div>
 </div>
 <!-- Javascript that applies to this is below the table -->
@@ -1115,14 +1112,13 @@ for career information.
 </table>
 
 <script>
-const button = document.getElementById('btn_update_table');
 const search_text = document.getElementById('input_rating_filter');
 
-if (!button || !search_text) {
-  throw new Error('button updater or search input not in DOM???');
+if (!search_text) {
+  throw new Error('search input not in DOM???');
 }
 
-button.addEventListener('click', (ev) => {
+search_text.addEventListener('input', ev => {
   const cur_search_text = search_text.value.toUpperCase();
   const cur_search_id = 'rating_' + cur_search_text;
 
