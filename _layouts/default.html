@@ -16,7 +16,7 @@
           <div class="navbar-item">Our Navy Portal</div>
 
           <!-- must be structured this way to appear on mobile -->
-          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -24,7 +24,8 @@
         </div>
 
         <!-- By default doesn't show on mobile, must be stuffed under navbar-burger instead -->
-        <div class="navbar-menu">
+        <!-- Javascript to toggle contained inline below -->
+        <div class="navbar-menu" id="navMenu">
           <div class="navbar-start"></div>
           <div class="navbar-end">
             <a class="navbar-item">
@@ -144,6 +145,21 @@
     </main>
 
     {%- include footer.html -%}
+
+    <script>
+      // See https://bulma.io/documentation/components/navbar/
+      document.addEventListener('DOMContentLoaded', () => {
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        $navbarBurgers.forEach(el => {
+          el.addEventListener('click', () => {
+            const $target = document.getElementById(el.dataset.target);
+            el.classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+          });
+        });
+      });
+    </script>
 
   </body>
 
