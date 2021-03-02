@@ -14,3 +14,7 @@ direction the U.S. Web Design Standards goes).
 You'll want to install Ruby Gems, Bundler, and Jekyll. If you install the first two
 then the normal [directions for setting up a Jekyll theme](https://github.com/jekyll/minima)
 should be sufficient to take you the rest of the way.
+
+# Live Demo
+
+[The live website Github generates for this repository is viewable here](https://mpyne-navy.github.io/proj-waterfall/)
