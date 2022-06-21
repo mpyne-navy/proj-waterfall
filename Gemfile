@@ -18,6 +18,7 @@ gem "github-pages", group: :jekyll_plugins
 
 # Jekyll 3.9 needs it but somehow bundle doesn't install it?
 gem "json"
+gem "webrick"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
